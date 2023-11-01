@@ -4,18 +4,18 @@ Github actions for Jira release automation.
 
 ### Inputs
 
-`domain`: Domain Name (check your jira url) - https://{domain}.atlassian.net
-`project`: Your project id
-`releaseName`: name of release you want
-`auth-token`: auth-token key
-`create-next-version`: create next version (option)
+`domain`: Domain Name (check your jira url) - https://{domain}.atlassian.net <br />
+`project`: Your project id <br />
+`releaseName`: Name of release <br />
+`auth-token`: auth-token key <br />
+`create-next-version`: create next version or not (optional)
 
 ### Auth Token
 
 https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/
 
 1. Generate an API token for Jira using your Atlassian Account.
-2. Build a string of the form useremail:api_token. (ted@prnd.co.kr:xxxxxxx)
+2. Build a string of the form useremail:api_token. (kandy1002@naver.com:xxxxxxx)
 3. BASE64 encode the string.
 
 - Linux/Unix/MacOS:
