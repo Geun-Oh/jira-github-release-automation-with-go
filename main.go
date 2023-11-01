@@ -124,7 +124,7 @@ func main() {
 
 	// getVerson
 
-	uri := `https://` + domain + `atlassian.net/rest/api/3/project/` + project + `/version?query=` + url.QueryEscape(releaseName) + `&orderBy=name&status=unreleased`
+	uri := `https://` + domain + `.atlassian.net/rest/api/3/project/` + project + `/version?query=` + url.QueryEscape(releaseName) + `&orderBy=name&status=unreleased`
 	req, err := http.NewRequest("GET", uri, nil)
 	if err != nil {
 		panic(err)
