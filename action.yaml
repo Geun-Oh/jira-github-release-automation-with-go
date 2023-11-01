@@ -1,0 +1,25 @@
+name: "Jira Github Release Automation With Go"
+description: "Release Version In Jira"
+branding:
+  icon: "edit"
+  color: "blue"
+
+inputs:
+  domain:
+    description: "Domain name (https://{domain}.atlassian.net)"
+    required: true
+  project:
+    description: "Project name"
+    required: true
+  releaseName:
+    description: "Release name"
+    required: true
+  auth-token:
+    description: "Jira Auth token key"
+    required: true
+  create-next-version:
+    description: "Automate Creating Next Version"
+
+runs:
+  using: "go"
+  main: "main.go"
