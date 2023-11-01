@@ -107,8 +107,7 @@ func main() {
 	domain, _ := core.GetInput("domain")
 	project, _ := core.GetInput("project")
 	releaseName, _ := core.GetInput("releaseName")
-	// version, _ := core.GetInput("version")
-	token, _ := core.GetInput("token")
+	token, _ := core.GetInput("auth-token")
 	// isCreateNextVersion := core.GetBoolInput("create-next-version")
 
 	// versionName := getVersionName(version)
